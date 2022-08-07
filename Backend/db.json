@@ -1,5 +1,40 @@
 {
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  "users": [
+    {
+      "id": 1,
+      "name": "funanani mazuwo",
+      "email": "mazuwo@gmail.com",
+      "phone": "o79 42 88 410"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "email": "Shanna@melissa.tv",
+      "phone": "010-692-6593"
+    }
+  ],
+
+  "booking": [
+    {
+      "listingId": 1,
+      "startDate": "2022-02-20",
+      "endDate": "2022-02-21",
+      "userId": "1"
+    }
+  ],
+  "listings": [
+    {
+      "id": 1,
+      "bath_num": 3,
+      "bed_num": 4,
+      "zip": 23456,
+      "address": "Shomolu Street",
+      "city": "Ikeja",
+      "street": "Agege",
+      "price": 2000,
+      "sq_ft": 4.2,
+      "email": "test@test.com",
+      "userId": 2
+    }
+  ]
 }

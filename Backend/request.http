@@ -1,7 +1,11 @@
-POST http://localhost:5000/posts
-content-type:application/json
-{
-  "id":1,
-  "title":"json-server",
-  "author":"typicode"
-}
+###
+GET http://localhost:5000/users
+###
+
+###
+http://localhost:5000/booking
+###
+
+###
+http://localhost:5000/listings
+###
