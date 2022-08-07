@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json:server": "json-server --watch db.json -p 5000"
+    "json:server": "json-server --watch db.json -p 5000  -m ./node_modules/json-server-auth"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "json-server": "^0.17.0"
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
   }
 }

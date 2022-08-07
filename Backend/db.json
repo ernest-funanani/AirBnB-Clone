@@ -11,10 +11,14 @@
       "name": "Ervin Howell",
       "email": "Shanna@melissa.tv",
       "phone": "010-692-6593"
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$J4k51Og9cYWhcir/MXLLUuVhumuzLWbwzzzMmPzn4Vh9.iCNbobje",
+      "id": 3
     }
   ],
-
-  "booking": [
+  "bookings": [
     {
       "listingId": 1,
       "startDate": "2022-02-20",

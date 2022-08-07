@@ -1,11 +1,36 @@
-###
+#GET ALL USERS
+
 GET http://localhost:5000/users
+
+#GET SINGLE USER
+GET http://localhost:5000/users/2
 ###
 
-###
-http://localhost:5000/booking
-###
+# REGISTER A USER
+POST http://localhost:5000/register
+content-type: application/json
 
+{
+  "email":"olivier@mail.com",
+  "password":"bestPassword"
+}
+
+#USER LOGIN
+###
+#
+POST http://localhost:5000/login
+content-type: application/json
+
+{
+  "email":"olivier@mail.com",
+  "password":"bestPassword"
+}
+
+###
+#GET ALL BOOKINGS
+http://localhost:5000/bookings
+###
+#GET ALL THE LISTING
 ###
 http://localhost:5000/listings
 ###
