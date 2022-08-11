@@ -4,6 +4,7 @@ import Header from "./componets/Layout/Header";
 import Home from "./componets/Home";
 import Footer from "./componets/Layout/Footer";
 import SearchPage from "./componets/SearchPage";
+import Modal from "./componets/Modal";
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
             <SearchPage />
           </Route>
         </Switch>
+        <Route path="/">
+          <Modal />
+        </Route>
         <Footer />
       </Router>
 

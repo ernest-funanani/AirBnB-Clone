@@ -1,11 +1,19 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import Login from "../Login";
 import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Avatar } from "@mui/material";
+import { openModal } from "../../Actions/ModalAction";
 import "./Header.css";
 
 const Header = () => {
+  const dispatch = useDispatch();
+
+  const openModalHandle = () => {
+    dispatch(openModal("open", <Login />));
+  };
   return (
     <div className="header">
       <img
@@ -21,6 +29,7 @@ const Header = () => {
         <p>Become a Host</p>
         <LanguageIcon />
         <ExpandMoreIcon />
+        <span onClick={openModalHandle}>Log In</span>
         <Avatar />
       </div>
     </div>

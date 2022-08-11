@@ -1,13 +1,40 @@
-import React from "react";
+import { React, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Banner from "./Banner";
 import Card from "./Card";
 import "./Home.css";
+import { listListing } from "../Actions/ListingAction";
 
 const Home = () => {
+  const dispatch = useDispatch();
+
+  const listingList = useSelector((state) => state.listingList);
+  const { loading, error, listings } = listingList;
+
+  useEffect(() => {
+    dispatch(listListing());
+  }, [dispatch]);
+
   return (
     <div className="home">
       <Banner />
-      <div className="home_section">
+      {loading ? (
+        <h2>Loading....</h2>
+      ) : error ? (
+        <h>{error}</h>
+      ) : (
+        <div className="home_section">
+          {listings.map((listing) => (
+            <Card
+              src={listing.img}
+              title={listing.title}
+              description={listing.description}
+              price={listing.price}
+            />
+          ))}
+        </div>
+      )}
+      {/* <div className="home_section">
         <Card
           src="https://a0.muscache.com/im/pictures/efe5ecfa-1173-4e8b-8c38-39a6f30a8b6a.jpg?im_w=720"
           title="Entire chalet hosted by Kirsten Slater"
@@ -31,9 +58,9 @@ const Home = () => {
           title="Entire villa hosted by Mothomang"
           description="The home is situated on the River! It is styled elegantly minimalist with a French Provence ambience. "
         />
-      </div>
+      </div> */}
 
-      <div className="home_section">
+      {/* <div className="home_section">
         <Card
           src="https://a0.muscache.com/im/pictures/a97b3fcf-0745-47ce-9ea8-2d32b5d5924b.jpg?im_w=720"
           title="Entire chalet hosted by Kirsten Slater"
@@ -63,7 +90,7 @@ const Home = () => {
           description="Welcome to Clarens Grand Villa."
           price="R3,400 ZAR"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -29,6 +29,7 @@
   "listings": [
     {
       "id": 1,
+      "img": "https://a0.muscache.com/im/pictures/80e1cfd1-5abf-4ff8-9ab1-d8a8d5d66679.jpg?im_w=960",
       "bath_num": 3,
       "bed_num": 4,
       "zip": 23456,
@@ -36,6 +37,22 @@
       "city": "Ikeja",
       "street": "Agege",
       "price": 2000,
+      "sq_ft": 4.2,
+      "email": "test@test.com",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "img": "https://a0.muscache.com/im/pictures/a97b3fcf-0745-47ce-9ea8-2d32b5d5924b.jpg?im_w=720",
+      "title": "Entire chalet hosted by Kirsten Slater",
+      "description": "A charming and neat log beach house in the heart of South Africas Garden route .",
+      "bath_num": 3,
+      "bed_num": 4,
+      "zip": 23456,
+      "address": "Shomolu Street",
+      "city": "Ikeja",
+      "street": "Agege",
+      "price": "R7,800 ZAR",
       "sq_ft": 4.2,
       "email": "test@test.com",
       "userId": 2
