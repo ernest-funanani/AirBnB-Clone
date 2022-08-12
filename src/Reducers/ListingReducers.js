@@ -2,7 +2,7 @@ import {
   LISTING_LIST_REQUEST,
   LISTING_LIST_SUCCESS,
   LISTING_LIST_FAIL,
-} from "../type/ListingTypes";
+} from "../types/ListingTypes";
 
 export const listingListReducer = (state = { listings: [] }, action) => {
   switch (action.type) {
